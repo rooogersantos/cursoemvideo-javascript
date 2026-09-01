@@ -16,6 +16,29 @@
     <h1>Iniciando estudo com DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    <div class="msg">Ou em mim</div>
+    <script>
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color= 'blue'
+        corpo.style.background = 'black'
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        var p2 = window.document.getElementsByTagName('p')[1]
+        document.write(p2.innerHTML)
+
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'red'
+
+        var d = window.document.getElementsByName('msg')[0]
+        d.style.background = 'red'*/
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'red'
+        var e = window.document.querySelector('div.msg')
+        e.style.background = 'green'
+        
+    </script>
 </body>
 </html>
