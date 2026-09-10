@@ -19,7 +19,11 @@ section {
 
 div {
     text-align: center;
-    padding: 8px
+    padding: 8px;
+}
+
+#image {
+    width: 300px;
 }
 
 footer {

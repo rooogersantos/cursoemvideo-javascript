@@ -13,9 +13,6 @@ function carregar () {
     } else if (hora1 >= 12 && hora1 < 18) { 
         img.src = 'tarde.png'
         document.body.style.background = '#8aa70d'
-    } else if (hora1 >= 18 && hora1 < 24) {
-        img.src = 'noite.png'
-        document.body.style.background = '#10192e'
     } else {
         img.src = 'noite.png'
         document.body.style.background = '#10192e'
