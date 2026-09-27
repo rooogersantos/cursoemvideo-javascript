@@ -1,26 +1,64 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<!DOCTYPE html> <!-- Informa ao navegador que o documento utiliza HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML e definição do idioma como português do Brasil -->
+<head> <!-- Início da área de configurações da página -->
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, permitindo acentos e caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar à largura da tela do dispositivo, ajudando na responsividade -->
     <title>Hora do Dia</title>
+    <!-- Define o título que aparece na aba do navegador -->
     <link rel="stylesheet" href="estilo.css">
-</head>
+    <!-- Vincula o arquivo CSS externo responsável pela aparência da página -->
+</head> <!-- Fim da área de configurações -->
+
 <body onload="carregar()">
-    <header>
-        <h1>Hora do Dia</h1>
+    <!-- Corpo da página.
+         O evento onload executa a função "carregar()" do JavaScript
+         assim que a página termina de carregar -->
+
+    <header> <!-- Cabeçalho da página -->
+        <h1>Hora do Dia</h1> <!-- Título principal exibido na página -->
     </header>
-    <section>
-        <div id='msg'>
+    <!-- Fim do cabeçalho -->
+
+    <section> <!-- Seção principal do conteúdo -->
+
+        <div id='msg1'>
+            <!-- Div que possui o ID "msg1".
+                Será utilizada pelo JavaScript para exibir uma mensagem
+                de acordo com o horário do dia -->
             Aqui vai aparecer a mensagem...
+            <!-- Texto inicial exibido enquanto o JavaScript não altera o conteúdo -->
         </div>
-        <div id="foto">
+        <div id="msg2">
+            <!-- Div que possui o ID "msg2".
+                Será utilizada pelo JavaScript para exibir uma mensagem
+                de acordo com o horário do dia -->
+            Aqui vai aparecer a mensagem de saudação...
+            <!-- Texto inicial exibido enquanto o JavaScript não altera o conteúdo -->
+        </div>
+
+        <div id="foto"> <!-- Div responsável por conter a imagem -->
             <img id="imagem" src="manha.png" alt="Foto do momento do dia">
+            <!-- Imagem exibida na página.
+                 O ID "imagem" permite que o JavaScript altere a imagem
+                 de acordo com o horário.
+                 src define a imagem inicial.
+                 alt fornece uma descrição alternativa da imagem. -->
         </div>
-    </section>
-    <footer>
+
+    </section> <!-- Fim da seção principal -->
+
+    <footer> <!-- Rodapé da página -->
         <p>&copy; CursoemVideo</p>
-    </footer>
+        <!-- Parágrafo do rodapé.
+             &copy; representa o símbolo de copyright © -->
+    </footer> <!-- Fim do rodapé -->
+
     <script src="script.js"></script>
-</body>
-</html>
+    <!-- Vincula o arquivo JavaScript externo "script.js",
+         responsável pela lógica e funcionamento da página -->
+
+</body> <!-- Fim do corpo da página -->
+
+</html> <!-- Fim do documento HTML -->
