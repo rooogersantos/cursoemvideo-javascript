@@ -1,28 +1,50 @@
-body {
+body { /* Define as configurações gerais do corpo da página */
     background-color: rgb(70, 142, 236);
+        /* Define a cor de fundo da página usando o sistema RGB */
     font: normal 15pt Arial;
+        /* Define a fonte utilizada na página
+        normal = estilo normal
+        15pt = tamanho da fonte
+        Arial = tipo da fonte */
 }
 
-header {
+header { /* Define as configurações do cabeçalho */
     color: white;
+        /* Define a cor do texto como branca */
     text-align: center;
+        /* Centraliza o texto horizontalmente */
 }
 
-section {
+section { /* Define as configurações da seção principal */
     background-color: white;
+        /* Define a cor de fundo da seção como branca */
     border-radius: 10px;
+        /* Arredonda os cantos da seção em 10 pixels */
     padding: 15px;
+        /* Cria um espaço interno de 15 pixels entre o conteúdo
+        e a borda da seção */
     width: 600px;
+        /* Define a largura da seção como 600 pixels */
     margin: auto;
+        /* Centraliza a seção horizontalmente na página */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+        /* Cria uma sombra ao redor da seção
+        3px = deslocamento horizontal
+        3px = deslocamento vertical
+        10px = desfoque da sombra
+        rgba() = define a cor preta com transparência */
 }
 
-div#result {
+div#result { /* Seleciona a div que possui o ID "result" */
     text-align: center;
+        /* Centraliza o conteúdo do resultado horizontalmente */
 }
 
-footer {
+footer { /* Define as configurações do rodapé */
     color: white;
+        /* Define a cor do texto como branca */
     text-align: center;
+        /* Centraliza o texto do rodapé */
     font-style: italic;
+        /* Deixa o texto do rodapé em itálico */
 }

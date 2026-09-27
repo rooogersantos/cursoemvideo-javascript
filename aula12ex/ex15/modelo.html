@@ -1,37 +1,81 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-    <header>
-        <h1>Verificador de Idade</h1>
-    </header>
-    <section>
-        <div>
-            <p>Ano de nascimento:
-                <input type="number" name="txtano" id="txtano" min="0">
-            </p>
-            <p> Sexo
-                <input type="radio" name="radsex" id="masc" checked>
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </p>  
-        </div>
-        <div id="result">
-            Preencha os dados acima para ver o resultado
-        </div>
-    </section>
-    <footer>
-        <p>&copy; CursoemVideo</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+<!DOCTYPE html> <!-- Informa ao navegador que o documento utiliza HTML5 -->
+
+<html lang="pt-br"> <!-- Início do documento HTML e definição do idioma como português do Brasil -->
+    <head> <!-- Início da área de configurações da página -->
+        <meta charset="UTF-8">
+            <!-- Define a codificação de caracteres como UTF-8,
+            permitindo o uso de acentos e caracteres especiais -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Faz a página se adaptar à largura da tela do dispositivo,
+            ajudando na responsividade -->
+        <title>Verificador de Idade</title>
+            <!-- Define o título que aparece na aba do navegador -->
+        <link rel="stylesheet" href="estilo.css">
+            <!-- Vincula o arquivo CSS externo responsável pela aparência da página -->
+    </head> <!-- Fim da área de configurações -->
+
+    <body> <!-- Início do corpo da página -->
+
+        <header> <!-- Cabeçalho da página -->
+            <h1>Verificador de Idade</h1>
+                <!-- Título principal exibido na página -->
+        </header> <!-- Fim do cabeçalho -->
+
+        <section> <!-- Seção principal onde ficam o formulário e o resultado -->
+
+            <div> <!-- Div que agrupa os campos de entrada -->
+                <p>Ano de nascimento: <!-- Texto solicitando o ano de nascimento -->
+                    <input type="number" name="txtano" id="txtano" min="0">
+                        <!-- Campo para o usuário informar o ano de nascimento
+                        type="number" permite somente entrada numérica
+                        name define o nome do campo
+                        id permite que o JavaScript encontre o campo
+                        min="0" impede valores menores que zero -->
+                </p>
+                <p> Sexo <!-- Texto indicando a escolha do sexo -->
+                    <input type="radio" name="radsex" id="masc" checked>
+                        <!-- Botão de opção para masculino
+                        type="radio" cria uma opção de seleção
+                        name="radsex" faz parte do mesmo grupo de opções
+                        id="masc" identifica essa opção
+                        checked deixa essa opção selecionada inicialmente -->
+                    <label for="masc">Masculino</label>
+                        <!-- Texto associado ao botão de opção masculino -->
+                    <input type="radio" name="radsex" id="fem">
+                        <!-- Botão de opção para feminino
+                        O mesmo "name" faz com que apenas uma opção
+                        possa ser selecionada por vez -->
+                    <label for="fem">Feminino</label>
+                        <!-- Texto associado ao botão de opção feminino -->
+                </p>
+                <p> <!-- Parágrafo que contém o botão de verificação -->
+                    <input type="button" value="Verificar" onclick="verificar()">
+                        <!-- Cria o botão "Verificar"
+                        value define o texto exibido no botão
+                        onclick executa a função verificar() do JavaScript
+                        quando o usuário clica no botão -->
+                </p>
+            </div>
+
+            <div id="result">
+                <!-- Div destinada a apresentar o resultado da verificação.
+                O ID "result" permite que o JavaScript altere seu conteúdo -->
+
+                Preencha os dados acima para ver o resultado
+                <!-- Mensagem exibida inicialmente antes da verificação -->
+            </div>
+
+        </section> <!-- Fim da seção principal -->
+
+        <footer> <!-- Rodapé da página -->
+            <p>&copy; CursoemVideo</p>
+                <!-- Exibe o símbolo de copyright © e o texto "CursoemVideo" -->
+        </footer> <!-- Fim do rodapé -->
+
+        <script src="script.js"></script>
+            <!-- Vincula o arquivo JavaScript externo "script.js",
+            responsável pela lógica de verificação da idade -->
+
+    </body> <!-- Fim do corpo da página -->
+
+</html> <!-- Fim do documento HTML -->
