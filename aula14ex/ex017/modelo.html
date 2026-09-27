@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-    <header>
-        <h1>Título</h1>
-    </header>
-    <section>
-        <div>
-            Testando...
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">    
+</head> <!-- Fim da área de configurações -->
+
+<body> <!-- Início do corpo da página -->
+    <header> <!-- Cabeçalho da página -->
+        <h1>Tabuada</h1> <!-- Título principal da página -->
+    </header> <!-- Fim do cabeçalho -->
+
+    <section> <!-- Seção principal da página -->
+        <div> <!-- Div que agrupa o campo de entrada e o botão -->
+            <p>Número <!-- Texto que indica onde o usuário deve informar o número -->
+                <input type="number" name="numero" id="txtn">
+                    <!-- Campo para o usuário digitar um número
+                    type="number" permite entrada numérica
+                    name define o nome do campo
+                    id="txtn" permite que o JavaScript encontre esse campo -->
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+                    <!-- Cria o botão "Gerar Tabuada"
+                    value define o texto exibido no botão
+                    onclick executa a função tabuada() quando o botão é clicado -->
+            </p>
         </div>
-        <div>
-            Olá!
+        <div><!-- Div que contém a lista da tabuada -->
+            <select name="tabuada" id="seltab" size="10">
+                <!-- Cria uma lista de seleção
+                id="seltab" permite que o JavaScript encontre o elemento
+                size="10" permite visualizar até 10 opções simultaneamente -->
+                <option>Digite um número acima</option>
+                    <!-- Opção inicial exibida antes de o usuário gerar a tabuada -->
+            </select>
         </div>
-    </section>
-    <footer>
+    </section> <!-- Fim da seção principal -->
+
+    <footer> <!-- Rodapé da página -->
         <p>&copy; CursoemVideo</p>
-    </footer>
+    </footer> <!-- Fim do rodapé -->
+
     <script src="script.js"></script>
-</body>
-</html>
+        <!-- Vincula o arquivo JavaScript responsável pela lógica da tabuada -->
+
+</body> <!-- Fim do corpo da página -->
+</html> <!-- Fim do documento HTML -->
